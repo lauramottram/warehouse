@@ -118,6 +118,7 @@ select {
 .discount {
   color: #FF8305;
   font-style: italic;
+  padding-bottom: 1rem;
 }
 
 .product-list-section {
@@ -163,6 +164,7 @@ select {
 .product-item .price {
   color: hsla(0, 0%, 29%, 1);
   margin-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 
@@ -342,6 +344,10 @@ header .image-container {
 
 .wishlist {
   margin: 0;
+}
+
+.wishlist-deals {
+  margin-left: 1rem;
 }
 
 
