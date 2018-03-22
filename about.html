@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WareHouse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/base.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/about.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+
+    <header role="banner">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="" class="highlight main-nav">New</a>
+          <a href="living.html" class="main-nav">Living Room</a>
+          <a href="" class="main-nav">Bed</a>
+          <a href="" class="main-nav">Bath</a>
+          <a href="" class="main-nav">Dining</a>
+          <a href="" class="main-nav">Kitchen</a>
+          <a href="" class="main-nav">Outdoor</a>
+          <a href="" class="main-nav">Lighting</a>
+          <a href="deals.html" class="highlight main-nav">Offers</a>
+        </div>
+  </div>
+      <div class="image-container">
+        <a href="index.html"><img src="resources/img/home.png" alt="WareHouse" title="WareHouse logo"></a>
+      </div>
+      <div class="search-bar">
+        <input type="text" name="search" placeholder="Search...">
+        <a href="" class="icon"><i class="fas fa-search"></i></a>
+      </div>
+      <div class="main-icons">
+        <a href="" class="top-icon" alt="account" title="account"><i class="fas fa-user-circle fa-2x"></i></a>
+        <a href="" class="top-icon" alt="Wishlist" title="wishlist"><i class="far fa-heart fa-2x"></i></a>
+        <a href="cart.html" class="top-icon" alt="Shopping cart" title="shopping cart"><i class="fas fa-shopping-cart fa-2x"></i></a>
+      </div>
+    </header>
+    <nav class="main-navigation" role="navigation">
+      <a href="" class="highlight main-nav">New</a>
+      <a href="living.html" class="main-nav">Living Room</a>
+      <a href="" class="main-nav">Bed</a>
+      <a href="" class="main-nav">Bath</a>
+      <a href="" class="main-nav">Dining</a>
+      <a href="" class="main-nav">Kitchen</a>
+      <a href="" class="main-nav">Outdoor</a>
+      <a href="" class="main-nav">Lighting</a>
+      <a href="deals.html" class="highlight main-nav">Offers</a>
+    </nav>
+
+
+    <!-- About Section -->
+
+    <main role="main" id="main" class="about">
+      <h2>WareHouse</h2>
+      <div class="information">
+        <p>
+          Looking to rebuild? Well, you've come to the right place. WareHouse
+          is a family-owned and operated house wares and furniture business
+          that's here to help you create the home of your dreams.
+        </p>
+        <p>
+          In 1934, Frances and Linda Ware started a furniture store in their
+          hometown of Jackson, MI. The sisters continued the family tradition
+          of building furniture, but their entrepreneurial spirit led them to
+          start selling their creations. In the post-war housing boom, WareHouse
+          expanded across the mid-west to become a trusted name home furnishings.
+        </p>
+          <p>
+          Today, WareHouse has locations across the continental US but we still
+          have that the hometown feel. So whether you're buying your first couch,
+          re-modeling your kitchen, or moving to a new city, WareHouse will help your new place feel like home.
+        </p>
+        <div class="join">
+          <h3>Join Our Team</h3>
+          <p>We currently have vacancies throughout our US stores. Interested in joining the team? Find out how today.
+          <p><a href="jobs.html" class="button">View Our Job Listings</a><p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer role="contentinfo">
+      <a href="index.html"><img src="resources/img/home.png" alt="WareHouse" title="WareHouse logo"></a>
+      <div class="links">
+        <a href="about.html">About us</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="#">Investor relations</a>
+      </div>
+      <div class="links">
+        <a href="sell.html">Sell on WareHouse</a>
+        <a href="#">Community outreach</a>
+        <a href="#">Fundraising opportunities</a>
+      </div>
+      <div class="links">
+        <a href="#">Help</a>
+        <a href="#">Contact us</a>
+        <a href="#">Conditions of use</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+
+</body>
+</html>

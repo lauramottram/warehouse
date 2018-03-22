@@ -1,0 +1,90 @@
+#main {
+  text-align: center;
+  justify-items: auto;
+  font-size: 16px;
+}
+
+.sell p {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+form {
+  display: grid;
+  grid-template-areas: 'name name price quantity'
+                       'description description description description'
+                       '. . . submit';
+  font-size: 16px;
+  grid-gap: 20px;
+}
+
+#main input {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+select {
+  font-size: 16px;
+  background-color: white;
+  color: grey;
+  border-radius: 0;
+  padding: 1.2rem;
+}
+
+
+
+textarea {
+  min-height: 12rem;
+  font-size: inherit;
+}
+
+#name {
+  grid-area: name;
+}
+
+#price {
+  grid-area: price;
+}
+
+#quantity {
+  grid-area: quantity;
+}
+
+#description {
+  grid-area: description;
+}
+
+#submit {
+  grid-area: submit;
+  justify-self: end;
+}
+
+@media only screen and (max-width: 1100px) {
+  .sell {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  form {
+    grid-template-areas: 'name name'
+                         'price quantity'
+                         'description description'
+                         '. submit';
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  form {
+    grid-template-areas: 'name'
+                         'price'
+                         'quantity'
+                         'description'
+                         'submit';
+  }
+
+  #submit {
+    justify-self: center;
+  }
+}

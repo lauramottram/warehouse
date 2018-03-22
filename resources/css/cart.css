@@ -1,0 +1,142 @@
+#main {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.product-list-section {
+  padding: 2rem 5rem 3.75rem 5rem;
+}
+
+.shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  border: 1px solid hsla(0, 0%, 85%, 1);
+  padding: 0rem 1rem 0rem 0rem;
+  background-color: hsla(0, 100%, 100%, 1);
+}
+
+.shopping-cart img {
+  width: 50%;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column: 1/4;
+  padding: 1.5rem 1rem 1.5rem 0rem;
+  border-bottom: 1px solid hsla(0, 0%, 85%, 1);
+  margin-left: 1.5rem;
+}
+
+#no-border {
+  border-bottom: none;
+}
+
+.shopping-cart input {
+  width: 1.5rem;
+  padding-left: 1rem;
+  border: 1px solid black;
+  margin-left: 1rem;
+}
+
+.total {
+  grid-column: 4;
+  grid-row: 1/4;
+  border-left: 1px solid hsla(0, 0%, 85%, 1);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+
+}
+
+.description h5 {
+
+  font-size: 20px;
+}
+
+h3 {
+  margin: 0;
+}
+
+.sell {
+  font-style: italic;
+}
+
+.product-item .price {
+  color: hsla(0, 0%, 29%, 1);
+}
+
+.description {
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+.description p {
+  margin-top: 1rem;
+}
+
+.total .description h3{
+  float: left;
+  margin-top: 2rem;
+}
+.total .description span{
+  float: right;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+#main .button {
+  box-sizing: border-box;
+  padding: 0.875rem 5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+@media only screen and (max-width: 1020px) {
+  .landing .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media only screen and (max-width: 815px) {
+  .landing .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .row img {
+    margin: 1rem;
+  }
+
+.row {
+  margin-left: 0;
+  grid-column: 1/5;
+  padding: 1rem 1rem 0rem 0rem;
+
+}
+
+#no-border {
+    border-bottom: 1px solid hsla(0, 0%, 85%, 1);
+}
+
+.description h5 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.total {
+  grid-column: 4;
+  grid-row: 4/4;
+  border-left: 1px solid hsla(0, 0%, 85%, 1);
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+
+}
+
+
+@media only screen and (max-width: 470px) {
+  .landing .product-list {
+    grid-template-columns: 1fr;
+  }
+}

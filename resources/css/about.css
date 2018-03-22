@@ -1,0 +1,38 @@
+/* About Page */
+p {
+  padding-bottom: 2rem;
+  font-size: 20px;
+  text-align: left;
+}
+
+
+.about .join {
+  display: grid;
+  justify-items: center;
+  padding: 0 1rem;
+  border: solid 1px #e7e7e7;
+  background-color: hsla(0, 0%, 100%, 1);
+}
+
+
+
+
+@media only screen and (max-width: 735px) {
+  .about h1 {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .about h1 {
+    font-size: 4rem;
+  }
+
+  .about h3 {
+    font-size: 1.25rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+}

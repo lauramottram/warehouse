@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WareHouse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/base.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/cart.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+
+    <header role="banner">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="" class="highlight main-nav">New</a>
+          <a href="living.html" class="main-nav">Living Room</a>
+          <a href="" class="main-nav">Bed</a>
+          <a href="" class="main-nav">Bath</a>
+          <a href="" class="main-nav">Dining</a>
+          <a href="" class="main-nav">Kitchen</a>
+          <a href="" class="main-nav">Outdoor</a>
+          <a href="" class="main-nav">Lighting</a>
+          <a href="deals.html" class="highlight main-nav">Offers</a>
+        </div>
+  </div>
+      <div class="image-container">
+        <a href="index.html"><img src="resources/img/home.png" alt="WareHouse" title="WareHouse logo"></a>
+      </div>
+      <div class="search-bar">
+        <input type="text" name="search" placeholder="Search...">
+        <a href="" class="icon"><i class="fas fa-search"></i></a>
+      </div>
+      <div class="main-icons">
+        <a href="" class="top-icon" alt="account" title="account"><i class="fas fa-user-circle fa-2x"></i></a>
+        <a href="" class="top-icon" alt="Wishlist" title="wishlist"><i class="far fa-heart fa-2x"></i></a>
+        <a href="cart.html" class="top-icon" alt="Shopping cart" title="shopping cart"><i class="fas fa-shopping-cart fa-2x"></i></a>
+      </div>
+    </header>
+    <nav class="main-navigation" role="navigation">
+      <a href="" class="highlight main-nav">New</a>
+      <a href="living.html" class="main-nav">Living Room</a>
+      <a href="" class="main-nav">Bed</a>
+      <a href="" class="main-nav">Bath</a>
+      <a href="" class="main-nav">Dining</a>
+      <a href="" class="main-nav">Kitchen</a>
+      <a href="" class="main-nav">Outdoor</a>
+      <a href="" class="main-nav">Lighting</a>
+      <a href="deals.html" class="highlight main-nav">Offers</a>
+    </nav>
+
+    <!-- Cart -->
+
+    <main role="main" id="main" class="product-list-section">
+      <h2>Shopping Cart</h2>
+
+    <div class="shopping-cart">
+
+        <div class="row">
+          <div class="image-container">
+            <img src="resources/img/cart/white-console.jpg" alt="white console" title="white-console">
+          </div>
+
+          <div class="description">
+            <h5>White Console</h5>
+            <br>
+            <span class="price">$499</span>
+          </div>
+
+          <div>
+            Quantity <input type="number" name="Quantity" placeholder="1">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="image-container">
+            <img src="resources/img/cart/yellow-chair.jpg" alt="yellow chair" title="yellow chair">
+          </div>
+
+          <div class="description">
+            <h5>Yellow Chair</h5>
+            <br>
+            <span class="price">$132.30</span>
+            <span class="discount">30% discount applied</span>
+
+          </div>
+
+          <div>
+            Quantity <input type="number" name="Quantity" placeholder="1">
+          </div>
+        </div>
+
+        <div class="row" id="no-border">
+          <div class="image-container">
+            <img src="resources/img/cart/wire-stool.jpg" alt="wire stool" title="wire stool">
+          </div>
+
+          <div class="description">
+            <h5>Wire Stool</h5>
+            <br>
+            <span class="price">$75</span>
+          </div>
+
+            <div>
+            Quantity <input type="number" name="Quantity" placeholder="1">
+          </div>
+        </div>
+
+      <div class="total">
+        <div class="description">
+          <h3>Total</h3>
+          <span class="price">$706.30</span>
+        </div>
+        <a href="" class="button">Checkout</a>
+      </div>
+  </div>
+</main>
+
+    <!-- Footer -->
+
+    <footer role="contentinfo">
+      <a href="index.html"><img src="resources/img/home.png" alt="WareHouse" title="WareHouse logo"></a>
+      <div class="links">
+        <a href="about.html">About us</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="#">Investor relations</a>
+      </div>
+      <div class="links">
+        <a href="sell.html">Sell on WareHouse</a>
+        <a href="#">Community outreach</a>
+        <a href="#">Fundraising opportunities</a>
+      </div>
+      <div class="links">
+        <a href="#">Help</a>
+        <a href="#">Contact us</a>
+        <a href="#">Conditions of use</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+</body>
+</html>

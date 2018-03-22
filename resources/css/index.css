@@ -1,0 +1,105 @@
+.hero {
+  width: 100%;
+  height: 25rem;
+  background-image: url('../img/home/hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: hsla(0, 0%, 100%, 1);
+}
+
+.hero-box {
+  background-color: white;
+  color: black;
+  font-size: 32px;
+  width: 30%;
+  padding: 30px 30px;
+  opacity: 0.9;
+  margin-left: 40px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.hero a, p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  line-height: 1.3
+}
+
+.hero h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.products {
+  padding: 0 5rem 6rem 5rem;
+}
+
+
+.landing .product-list {
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.description {
+  line-height: 1.5;
+}
+
+h3 {
+  text-align: left;
+  padding: 1rem;
+  color:
+}
+
+.subtitle {
+  text-align: center;
+  margin: 2rem auto 1rem auto;
+  color: #FF8305;
+}
+
+.product-category {
+  margin-bottom: 2rem;
+}
+
+.categories   {
+  margin-bottom: 2rem;
+}
+
+
+@media only screen and (max-width: 850px) {
+  .landing .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
+    height: 20rem;
+  }
+
+.hero p {
+  font-size: 1rem;
+  padding-top: 0;
+}
+
+.hero h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+}
+
+
+@media only screen and (max-width: 580px) {
+  .landing .product-list {
+    grid-template-columns: 1fr;
+  }
+
+.hero {
+  display: none;
+}
+
+.description h3 {
+  margin: 0;
+}
+
+}
